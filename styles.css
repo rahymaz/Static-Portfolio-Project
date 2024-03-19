@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Croissant+One&family=Manrope&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Croissant+One&family=Manrope:wght@200;400;800&family=Merriweather:ital@0;1&family=Space+Mono:wght@700&family=Work+Sans:wght@400;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.header {
+    width:98%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 43.75rem;
+    /* margin-left: 0.5rem;
+    margin-right: 0.5rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     align-items: center; 
+     padding: 0.5rem;
+     border-bottom: 0.006rem solid #345662;
+}
+
+.myName {
+    /* background-color: hsl(126,97%,36%); */
+    color: hsl(126,97%,36%);
+    padding: 0.5rem;
+    border-radius: 1.875rem;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+.header a {
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+header a:hover{
+    color: hsl(126,97%,36%);
+    text-decoration: underline;
+}
+
+contact, button {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    border-radius: 0.875rem;
+    padding: 0.313rem 0.625rem;
+}
+
+button:hover {
+    color: rgb(255,255,255);  
+    background-color: hsl(126,97%,36%); 
+}
+.cont:hover {
+    color: rgb(255,255,255); 
+}
+
+#menuContent {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  
+  /* Style for the hamburger icon */
+  #hamburger {
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+
+.directory {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.75rem;
+    list-style: none;
+}
+
+/* 
+.directory {
+    width: 20%;
+    height: auto;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}  */
+
+.myProfile{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    align-items: center;
+}
+
+.aboutMe {
+    width: 47.5%;
+    height: auto;
+    font-size: 1.5rem;
+}
+
+.aboutMe h1{
+    padding: 1rem;
+    }
+
+.aboutMe p{
+    line-height: 3rem;
+}
+.myPhoto {
+    width: 47.5%;
+    height: auto;
+}
+
+.aboutMeImg {
+    max-width:100%;
+    height: auto;
+    border-radius: 20%;
+}
+
+.myCreative {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.myCreative p {
+    font-size: 1.2rem;
+    color: lightslategray;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 0.4rem;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* .projectOne {
+    margin-top: 8.438rem;
+} */
+.imgHeight {
+    height: 34.375rem;
+    width: 30rem;
+}
+
+/* .projectFour {
+    margin-top: 8.438rem;
+} */
+.general{
+    width: 24%;
+}
+
+.general img{
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 5rem;
+}
+
+.skills img{
+    width: 5rem;
+    height: auto;
+    padding: 1rem;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color:#345662;
+    padding-left: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    margin-top: 0.313rem;
+} 
+
+
+@media screen and (max-width: 1080px) {
+
+
+    #menuContent {
+        display:none;
+      }
+      
+      /* Style for the hamburger icon */
+      #hamburger {
+        cursor: pointer;
+        visibility: visible;
+      }
+    
+
+
+
+
+.directory{
+    display: none;
+}
+
+
+.myProfile{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: baseline;
+    padding: 1rem;
+    align-items: center;
+}
+
+.aboutMe {
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+}
+
+.aboutMe h1{
+    padding: 1rem;
+    text-align: center;
+    }
+
+.aboutMe p{
+    line-height: 3rem;
+    text-align: justify;
+}
+.myPhoto {
+    width: 100%;
+    height: auto;
+}
+
+.aboutMeImg {
+    max-width:100%;
+    height: auto;
+    border-radius: 20%;
+}
+
+
+.myCreative {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.myCreative p {
+    font-size: 1.2rem;
+    color: lightslategray;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* .projectOne {
+    margin-top: 8.438rem;
+} */
+.imgHeight {
+    height: 34.375rem;
+    width: 30rem;
+}
+
+/* .projectFour {
+    margin-top: 8.438rem;
+} */
+.general{
+    width: 35%;
+}
+
+.general img{
+    width: 100%;
+}
+
+
+}
