@@ -21,3 +21,21 @@ window.addEventListener("click", function(event) {
   }
 
 });
+
+let darkModeToggle = document.getElementById("darkModeToggle");
+
+// Add event listener to the toggle button
+darkModeToggle.addEventListener("click", function() {
+  // Toggle the dark mode class on the body element
+  document.body.classList.toggle("dark-mode");
+
+
+  let darkModeActive = document.body.classList.contains("dark-mode");
+  darkModeToggle.innerText = 'light mode';
+  if (darkModeActive) {
+    darkModeToggle.textContent = "Light Mode";
+  } else {
+    darkModeToggle.textContent = "Dark Mode";
+  }
+
+});
